@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+    <div class="mx-5 px-5 mb-4 border rounded border-white border-3">
+        <div class="mb-1 py-1 mb-3 mt-1">
+            <label class="form-label lead">Blog Title</label>
+            <input type="email" class="form-control"  placeholder="Title Here">
+        </div>
+        
+        <div class="mb-3 pb-2 ">
+            <label for="exampleFormControlTextarea1" class="form-label lead">Content</label>
+            <div class="input-group mb-3 border rounded border-white border-3">
+                <input class="form-control"  type="file" id="imageInput" accept="image/*">
+                <button class="input-group-text btn btn-outline-light border border-3 " id="uploadButton">Upload</button>
+                  
+            </div>
+            <div class="grid1">
+                <div contentEditable="true" class="form-control form-control-lg content img-container" id="exampleFormControlTextarea1">
+                    <div contentEditable="false" class="img1 img-container" id="imageContainer"></div>
+                    <br>
+                    <br>
+                    <br>
+
+
+                </div>
+                <div class="button-container mt-2">
+                    <button class="btn btn-outline-light border border-3  " id="addImageContainerButton">Add Image</button>
+                    <button class="btn btn-outline-light border border-3  " id="alignLeftButton">IMG Left</button>
+                    <button class="btn btn-outline-light border border-3  " id="alignRightButton">IMG Right</button>
+                    <button class="btn btn-outline-light border border-3  " id="alignCenterButton">IMG Center</button>
+                    <button class="btn btn-outline-light border border-3  " id="increaseSize">IMG Size ⇑</button>
+                    <button class="btn btn-outline-light border border-3 " id="decreaseSize">IMG Size ⇓</button>
+                    <button class="btn btn-outline-light border border-3 " id="increaseFontSizeButton">Font ⇑ </button>
+                    <button class="btn btn-outline-light border border-3 " id="decreaseFontSizeButton">Font ⇓</button>
+                    <button class="btn btn-outline-light border border-3 " id="boldToggleButton">Bold</button>
+                    <a href="/notify"><button class="btn btn-outline-light border border-3 k ms-5 rounded-5 " id="saveButton">Save</button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<%- include('partials/footer') %>
